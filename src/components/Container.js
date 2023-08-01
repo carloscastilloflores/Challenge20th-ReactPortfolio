@@ -7,10 +7,10 @@ import Resume from './pages/Resume';
 import { render } from '@testing-library/react';
 
 export default function PortfolioContainer() {
-    const [currentPage, setCurrentPage] = useState('Aboutme');
+    const [currentPage, setCurrentPage] = useState('AboutMe');
 
     const renderPage = () => {
-        if (currentPage === 'Aboutme') {
+        if (currentPage === 'AboutMe') {
             return <AboutMe />;
         } 
         if (currentPage === 'Portfolio') {

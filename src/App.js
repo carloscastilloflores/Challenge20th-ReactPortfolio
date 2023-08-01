@@ -1,14 +1,12 @@
 import React, { useState, useEffect } from 'react'; 
-import NavBar from './components/NavBar';
-import AboutMe from './components/pages/AboutMe';
-import Portfolio from './components/pages/Portfolio';
-import Resume from './components/pages/Resume';
+import Header from './components/Header';
+import Container from './components/Container'
+import Footer from './components/Footer'
 
 function App() {
    return (
     <div>
-        <Header /> 
-        <AboutMe />
+        <Container />
         {/* Condition where if its /homepage, it will render About me
         Condition where if its /Portfolio, it will render Portfolio 
         Condition where if its /Portfolio, it will render Portfolio  */}

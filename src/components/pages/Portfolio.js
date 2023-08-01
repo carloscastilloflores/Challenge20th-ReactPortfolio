@@ -1,10 +1,10 @@
 import React from 'react'; 
 //Import photographs 
-import contentExp from '../../../public/TuneSurf.png'
-import radial from '../../../public/Radial_Website.png'
-import photoEditing from '../../../public/Editing.png'
-import corona from '../../../public/CoronaCapital_Challenge.png'
-import creativeArt from '../../../public/Miguel_Single.png'
+import contentExp from '../../images/TuneSurf.png'
+import radial from '../../images/Radial_Website.png'
+import photoEditing from '../../images/Editing.png'
+import corona from '../../images/CoronaCapital_Challenge.png'
+import creativeArt from '../../images/Miguel_Single.jpg'
 
 
 export default function Portfolio() {

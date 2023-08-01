@@ -2,26 +2,68 @@ import React from 'react';
 //Import photographs 
 import contentExp from '../../images/TuneSurf.png'
 import radial from '../../images/Radial_Website.png'
-import photoEditing from '../../images/Editing.png'
+import photoEditing from '../../images/Editing2.png'
 import corona from '../../images/CoronaCapital_Challenge.png'
 import creativeArt from '../../images/Miguel_Single.jpg'
+import salesTracker from '../../images/SalesTracker.jpg'
 
 
 export default function Portfolio() {
     return (
-        <div className="container">
-            <a href="https://rodrigorol.github.io/TuneSurf/index.html" src={contentExp} className="box-item photofbr" >
-                <div>
-                    <h3>TuneSurf Application</h3>
-                    <span>Content experience</span>
+        <div>
+            <div className="row">
+                <div className="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                    <img 
+                        src={contentExp}
+                        className="w-100 shadow-1-strong rounded mb-4"
+                        alt="Three phones displaying media from favorite artist"
+                    />
+                    <img
+                        src={photoEditing}
+                        className="w-100 shadow-1-strong rounded mb-4"
+                        alt="Landing Page with Radial Logo and background mushroom"
+                    />
                 </div>
-            </a>
-            <a href="#" src={radial} className="box-item radial-website">
-                <div>
-                    <h3>Radial Website</h3>
-                    <span>HTML & CSS</span>
+                <div className="col-lg-4 mb-4 mb-lg-0">
+                <img 
+                        src={creativeArt}
+                        className="w-100 shadow-1-strong rounded mb-4"
+                        alt="Three phones displaying media from favorite artist"
+                    />
+                    <img
+                        src={salesTracker}
+                        className="w-100 shadow-1-strong rounded mb-4"
+                        alt="Landing Page with Radial Logo and background mushroom"
+                    />
                 </div>
-            </a>
+                <div className="col-lg-4 mb-4 mb-lg-0">
+                <img 
+                        src={radial}
+                        className="w-100 shadow-1-strong rounded mb-4"
+                        alt="Three phones displaying media from favorite artist"
+                    />
+                    <img
+                        src={corona}
+                        className="w-100 shadow-1-strong rounded mb-4"
+                        alt="Landing Page with Radial Logo and background mushroom"
+                    />
+                </div>
+                <a href="https://rodrigorol.github.io/TuneSurf/index.html" src={contentExp} >
+                    <div>
+                        <h3>TuneSurf Application</h3>
+                        <span>Content experience</span>
+                    </div>
+                </a>
+            </div>
+            <div className=".col-6">
+                <a href="#" src={radial}>
+                    <div>
+                        <h3>Radial Website</h3>
+                        <span>HTML & CSS</span>
+                    </div>
+                </a>
+            </div>
+
             <a href="#"  src={corona}  class="box-item corona-challenge">
                 <div>
                     <h3>Corona Challenge</h3>

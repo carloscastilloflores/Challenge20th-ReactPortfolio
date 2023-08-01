@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function AboutMe() {
     return (
-        <div> 
+        <div className='container'> 
             <h1> About Me </h1>
             <p>
             Hi there! My name is Carlos Castillo Flores, and I'm a designer and photographer based in Guadalajara, 

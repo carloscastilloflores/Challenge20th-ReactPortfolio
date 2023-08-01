@@ -1,45 +1,49 @@
 import React from 'react';
+import Header from './Header';
 
 function NavBar({currentPage, handlePageChange}) {
     return (
-        <ul className="nav nav-tabs">
-            <li className="nav-item">
+        <div className='p-3 d-flex justify-content-end '>
+        <h1 className="flex-fill" >Carlos Castillo Portfolio </h1>
+        <ul className="navbar nav-tabs  ">
+            <div className="nav-item">
                 <a
                 href="#aboutme"
-                onClick={() => handlePageChange('About')}
-                className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
+                onClick={() => handlePageChange('AboutMe')}
+                className={currentPage === 'AboutMe' ? 'navbar-brand' : 'navbar-brand '}
                 >
                 About Me
                 </a>
-            </li>
-            <li className="nav-item">
+            </div>
+            <div className=" nav-item">
                 <a
                 href="#Portfolio"
                 onClick={() => handlePageChange('Portfolio')}
-                className={currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link'}
+                className={currentPage === 'Portfolio' ? 'navbar-brand' : 'navbar-brand'}
                 >
                 Portfolio
                 </a>
-                <li className="nav-item">
+            </div>
+            <div className="nav-item">
                 <a
                 href="#Contact"
                 onClick={() => handlePageChange('Contact')}
-                className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
+                className={currentPage === 'Contact' ? 'navbar-brand' : 'navbar-brand'}
                 >
                 Contact 
                 </a>
-                <li className="nav-item">
+            </div>
+            <div className="nav-item">
                 <a
                 href="#Resume"
                 onClick={() => handlePageChange('Resume')}
-                className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}
+                className={currentPage === 'Resume' ? 'navbar-brand' : 'navbar-brand'}
                 >
                 Resume
                 </a>
-            </li>
-            </li>
-            </li>
+            </div>
         </ul>
+        </div>
     )
 }
 

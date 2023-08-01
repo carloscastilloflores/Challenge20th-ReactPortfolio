@@ -9,15 +9,14 @@ import creativeArt from '../../images/Miguel_Single.jpg'
 
 export default function Portfolio() {
     return (
-        <div class="item-container">
-        <h2>Work</h2>
-            <a href="https://rodrigorol.github.io/TuneSurf/index.html" src={contentExp} class="box-item photofbr" >
+        <div className="container">
+            <a href="https://rodrigorol.github.io/TuneSurf/index.html" src={contentExp} className="box-item photofbr" >
                 <div>
                     <h3>TuneSurf Application</h3>
                     <span>Content experience</span>
                 </div>
             </a>
-            <a href="#" src={radial} class="box-item radial-website">
+            <a href="#" src={radial} className="box-item radial-website">
                 <div>
                     <h3>Radial Website</h3>
                     <span>HTML & CSS</span>

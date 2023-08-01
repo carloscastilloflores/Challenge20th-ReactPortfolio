@@ -6,6 +6,7 @@ import Footer from './components/Footer'
 function App() {
    return (
     <div>
+
         <Container />
         {/* Condition where if its /homepage, it will render About me
         Condition where if its /Portfolio, it will render Portfolio 

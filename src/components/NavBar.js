@@ -1,11 +1,14 @@
 import React from 'react';
 import Header from './Header';
+import Logo from '../images/LogoCarlos.png'
 
 function NavBar({currentPage, handlePageChange}) {
     return (
-        <div className='p-3 d-flex justify-content-end '>
-        <h1 className="flex-fill" >Carlos Castillo Portfolio </h1>
-        <ul className="navbar nav-tabs  ">
+        <div className='p-3 d-flex'>
+            <div>
+             <img className="w-50 d-flex pb-2 justify-content-start" src={Logo} />
+            </div>
+        <ul className="navbar nav-tabs d-flex justify-content-end  " >
             <div className="nav-item">
                 <a
                 href="#aboutme"

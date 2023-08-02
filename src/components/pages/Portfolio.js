@@ -1,4 +1,5 @@
 import React from 'react'; 
+import { useState } from 'react';
 //Import photographs 
 import contentExp from '../../images/TuneSurf.png'
 import radial from '../../images/Radial_Website.png'
@@ -7,22 +8,57 @@ import corona from '../../images/CoronaCapital_Challenge.png'
 import creativeArt from '../../images/Miguel_Single.jpg'
 import salesTracker from '../../images/SalesTracker.jpg'
 
-
 export default function Portfolio() {
+
+const [isHover, setIsHover] = useState(false);
+const handleMouseEnter = () => {
+    setIsHover(true);
+};
+const handleMouseLeave = () => {
+    setIsHover(false);
+};
+const boxStyle = {
+    position: 'absolute',
+    display: 'flex',
+    flexWrap: 'wrap',
+    padding: '4px',
+    justifyContent: 'center',
+    alignItems: 'center',
+    fontSize: '25px',
+    cursor: 'pointer',
+    top: 0,
+    bottom: 0,
+    left: 0,
+    right: 0,
+    zIndex: 1,
+    opacity: isHover ? 1 : 0,
+    visibility: isHover ? 'visible' : 'hidden',
+    transition: 'opacity 0.5s ease', 
+    backgroundColor: isHover ? 'rgba(255, 255, 255, 0.9)' : 'white',
+  };
+
+
     return (
         <div>
             <div className="row">
-                <div className="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                <div className="col-lg-4 col-md-12 mb-4 mb-lg-0" >
+                    <div style={{position: 'relative', zIndex:'0'}} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} >
                     <img 
                         src={contentExp}
                         className="w-100 shadow-1-strong rounded mb-4"
                         alt="Three phones displaying media from favorite artist"
+                        
                     />
+                     {isHover && <h1 className="mask" style={boxStyle}> Tune Surf App<br/>Experience content</h1>}     
+                    </div>
+                    <div style={{position: 'relative', zIndex:'0'}} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
                     <img
                         src={photoEditing}
                         className="w-100 shadow-1-strong rounded mb-4"
                         alt="Landing Page with Radial Logo and background mushroom"
                     />
+                     {isHover && <h1 className="mask" style={boxStyle}> Editorial photography<br/>Post-production editing</h1>}     
+                    </div>
                 </div>
                 <div className="col-lg-4 mb-4 mb-lg-0">
                 <img 
